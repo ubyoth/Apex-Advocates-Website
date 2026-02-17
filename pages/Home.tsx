@@ -178,9 +178,14 @@ const Home: React.FC = () => {
           <h2 className="text-4xl font-bold text-white mb-6">Secure Your Legal Interests Today</h2>
           <p className="text-xl text-slate-400 mb-10">Schedule a consultation with our experts to discuss your requirements.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact#direct-inquiry" className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20">
+            <a 
+              href="https://calendly.com/othmany13/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20"
+            >
               Book a Consultation
-            </Link>
+            </a>
             <Link to="/success-stories" className="bg-transparent border border-white/20 text-white px-8 py-3.5 rounded-lg font-bold text-base hover:bg-white/10 transition-all">
               Success Stories
             </Link>

@@ -11,6 +11,7 @@ import SportsLaw from './pages/SportsLaw';
 import Practices from './pages/Practices';
 import About from './pages/About';
 import LegalAssistant from './components/LegalAssistant';
+import SurveyPopup from './components/SurveyPopup';
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -49,6 +50,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
         <LegalAssistant />
+        <SurveyPopup />
       </div>
     </Router>
   );

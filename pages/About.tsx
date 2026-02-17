@@ -54,9 +54,14 @@ const About: React.FC = () => {
                     <a href="https://www.linkedin.com/in/yahaya-othman/" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-secondary-grey/20 flex items-center justify-center hover:bg-accent-gold transition-all group shadow-sm border border-accent-gold/5">
                       <svg className="w-6 h-6 text-black dark:text-white group-hover:text-black fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
-                    <Link to="/contact#direct-inquiry" className="flex-grow bg-black dark:bg-accent-gold text-white dark:text-black rounded-2xl flex items-center justify-center font-black uppercase tracking-widest text-xs hover:bg-slate-800 dark:hover:bg-yellow-600 transition-all">
+                    <a 
+                      href="https://calendly.com/othmany13/30min" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-grow bg-black dark:bg-accent-gold text-white dark:text-black rounded-2xl flex items-center justify-center font-black uppercase tracking-widest text-xs hover:bg-slate-800 dark:hover:bg-yellow-600 transition-all"
+                    >
                       Schedule Consultation
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -136,12 +141,14 @@ const About: React.FC = () => {
           <p className="text-slate-500 dark:text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
             Experience the precision and strategic depth that defines Yahaya's practice.
           </p>
-          <Link 
-            to="/contact#direct-inquiry" 
+          <a 
+            href="https://calendly.com/othmany13/30min" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="bg-black dark:bg-accent-gold text-white dark:text-black px-8 py-3.5 rounded-lg font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-2xl shadow-accent-gold/20"
           >
             Direct Inquiry
-          </Link>
+          </a>
         </div>
       </section>
     </div>

@@ -151,9 +151,14 @@ const KnowledgeCentre: React.FC = () => {
             <div className="bg-accent-gold rounded-3xl p-10 text-black shadow-2xl">
               <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter leading-none">Legal <br/>Inquiry?</h3>
               <p className="text-black/60 text-sm mb-10 font-medium leading-relaxed">Our experts are ready to assist you with your specific requirements. Confidential and professional.</p>
-              <Link to="/contact" className="inline-flex items-center justify-between w-full bg-black text-white px-2 py-4 rounded-xl font-bold hover:gap-6 transition-all">
+              <a 
+                href="https://calendly.com/othmany13/30min" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-between w-full bg-black text-white px-2 py-4 rounded-xl font-bold hover:gap-6 transition-all"
+              >
                 Schedule <span className="material-icons">arrow_right_alt</span>
-              </Link>
+              </a>
             </div>
           </aside>
         </div>

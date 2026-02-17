@@ -54,13 +54,25 @@ const Practices: React.FC = () => {
                    ))}
                 </div>
 
-                <Link 
-                  to={area.id === 'sports' ? '/practices/sports' : '/contact#direct-inquiry'} 
-                  className="inline-flex items-center gap-4 bg-black dark:bg-accent-gold text-white dark:text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:gap-6 transition-all shadow-xl"
-                >
-                  {area.id === 'sports' ? 'Explore Sports Law' : 'Request Consultation'}
-                  <span className="material-icons">east</span>
-                </Link>
+                {area.id === 'sports' ? (
+                  <Link 
+                    to="/practices/sports" 
+                    className="inline-flex items-center gap-4 bg-black dark:bg-accent-gold text-white dark:text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:gap-6 transition-all shadow-xl"
+                  >
+                    Explore Sports Law
+                    <span className="material-icons">east</span>
+                  </Link>
+                ) : (
+                  <a 
+                    href="https://calendly.com/othmany13/30min" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-4 bg-black dark:bg-accent-gold text-white dark:text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:gap-6 transition-all shadow-xl"
+                  >
+                    Request Consultation
+                    <span className="material-icons">east</span>
+                  </a>
+                )}
               </div>
 
               {/* Visual Side */}
@@ -128,9 +140,14 @@ const Practices: React.FC = () => {
             If your specific requirement isn't listed, our firm specializes in multi-disciplinary legal challenges that require strategic intervention and sophisticated navigation.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link to="/contact#direct-inquiry" className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-black uppercase tracking-widest text-xs hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20">
-              Custom Brief Inquiry
-            </Link>
+            <a 
+              href="https://calendly.com/othmany13/30min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-black uppercase tracking-widest text-xs hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20"
+            >
+              Book Consultation
+            </a>
             <Link to="/success-stories" className="bg-transparent border border-white/20 text-white px-8 py-3.5 rounded-lg font-black uppercase tracking-widest text-xs hover:bg-white/5 transition-all">
               Client Success Stories
             </Link>

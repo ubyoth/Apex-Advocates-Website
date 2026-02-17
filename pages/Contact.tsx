@@ -41,33 +41,59 @@ const Contact: React.FC = () => {
           <div id="direct-inquiry" className="bg-white dark:bg-secondary-grey/5 rounded-3xl p-10 lg:p-14 shadow-2xl border border-slate-100 dark:border-accent-gold/10 scroll-mt-32">
             <h2 className="text-3xl font-bold text-black dark:text-white mb-4">Submit Inquiry</h2>
             <p className="text-slate-500 dark:text-slate-400 mb-12">Expect a response from our senior associate within one business day.</p>
-            <form className="space-y-8">
+            <form 
+              action="https://formspree.io/f/xaqdjvno"
+              method="POST"
+              className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-3">
                   <label className="text-xs font-black text-black dark:text-accent-gold uppercase tracking-widest">Full Name</label>
-                  <input className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all" placeholder="John Doe" type="text" />
+                  <input 
+                    name="fullName"
+                    type="text"
+                    required
+                    placeholder="John Doe"
+                    className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all"
+                  />
                 </div>
                 <div className="space-y-3">
                   <label className="text-xs font-black text-black dark:text-accent-gold uppercase tracking-widest">Email Address</label>
-                  <input className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all" placeholder="john@example.com" type="email" />
+                  <input 
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="john@example.com"
+                    className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all"
+                  />
                 </div>
               </div>
               <div className="space-y-3">
                 <label className="text-xs font-black text-black dark:text-accent-gold uppercase tracking-widest">Legal Service</label>
-                <select className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all appearance-none">
-                  <option>Corporate Advisory</option>
-                  <option>Sports</option>
-                  <option>Intellectual Property</option>
-                  <option>Dispute Resolution</option>
-                  <option>CAC Issues</option>
-                  <option>Other</option>
+                <select 
+                  name="service"
+                  className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all appearance-none"
+                >
+                  <option value="Corporate Advisory">Corporate Advisory</option>
+                  <option value="Sports">Sports</option>
+                  <option value="Intellectual Property">Intellectual Property</option>
+                  <option value="Dispute Resolution">Dispute Resolution</option>
+                  <option value="CAC Issues">CAC Issues</option>
+                  <option value="Other">Other</option>
                 </select>
               </div>
               <div className="space-y-3">
                 <label className="text-xs font-black text-black dark:text-accent-gold uppercase tracking-widest">Case Description</label>
-                <textarea className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all resize-none min-h-[180px]" placeholder="Briefly summarize your requirements..."></textarea>
+                <textarea 
+                  name="message"
+                  required
+                  className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all resize-none min-h-[180px]" 
+                  placeholder="Briefly summarize your requirements..."
+                ></textarea>
               </div>
-              <button className="w-full bg-accent-gold text-black py-5 rounded-xl font-black text-lg hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20 flex items-center justify-center gap-3 group">
+              <button 
+                type="submit"
+                className="w-full bg-accent-gold text-black py-5 rounded-xl font-black text-lg hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20 flex items-center justify-center gap-3 group"
+              >
                 Submit Inquiry <span className="material-icons group-hover:translate-x-1 transition-transform">send</span>
               </button>
             </form>

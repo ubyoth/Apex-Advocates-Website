@@ -67,9 +67,14 @@ const SuccessStories: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-6">Need Expert Legal Counsel?</h2>
           <p className="text-slate-400 text-lg mb-12">Our success stories are built on meticulous attention to detail and unwavering client advocacy. Our founding partner, Yahaya Oruma Othman, ensures every case reflects a decade of excellence.</p>
-          <Link to="/contact#direct-inquiry" className="inline-block bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-2xl shadow-accent-gold/20">
+          <a 
+            href="https://calendly.com/othmany13/30min" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-2xl shadow-accent-gold/20"
+          >
             Schedule Your Confidential Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </div>

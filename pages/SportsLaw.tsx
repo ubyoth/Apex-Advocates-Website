@@ -149,12 +149,14 @@ const SportsLaw: React.FC = () => {
           <p className="text-slate-400 text-lg mb-12">
             Whether you are a rising talent or an established professional, our Sports Law division provides the strategic backbone your career needs.
           </p>
-          <Link 
-            to="/contact" 
+          <a 
+            href="https://calendly.com/othmany13/30min" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="inline-block bg-accent-gold text-black px-12 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-yellow-600 transition-all shadow-2xl shadow-accent-gold/20"
           >
             Request Private Consultation
-          </Link>
+          </a>
         </div>
       </section>
     </div>
