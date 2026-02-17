@@ -10,7 +10,7 @@ const SurveyPopup: React.FC = () => {
     if (!hasAnswered) {
       const timer = setTimeout(() => {
         setIsVisible(true);
-      }, 10000); // 70 second delay as requested
+      }, 180000); // 3 minute delay as requested (180,000 ms)
       return () => clearTimeout(timer);
     }
   }, []);
