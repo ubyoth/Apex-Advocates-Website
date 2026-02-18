@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-extrabold tracking-tight uppercase text-white leading-tight">Apex Advocates And Solicitors</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Leading the way in corporate and dispute resolution legal practice with a commitment to excellence and strategic resolution.
+              Leading the way in comprehensive sports law practice, encompassing corporate transactions, dispute resolution, and regulatory compliance, with a commitment to excellence and strategic resolution for athletes, teams, leagues, and industry stakeholders.
             </p>
             <div className="flex gap-4">
               {/* Facebook */}
