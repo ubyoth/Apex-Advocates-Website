@@ -65,7 +65,7 @@ const Home: React.FC = () => {
           <img 
             alt="Modern Law Office Interior" 
             className="w-full h-full object-cover grayscale opacity-50" 
-            src="https://res.cloudinary.com/dq7vjblwd/image/upload/v1771281426/Gemini_Generated_Image_kdddiokdddiokddd_sopjmb.png"
+            src="/hero-bg.png"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
         </div>
