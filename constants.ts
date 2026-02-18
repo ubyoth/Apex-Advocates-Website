@@ -34,7 +34,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
     ]
   },
   {
-    id: 'corp',
+    id: 'corporate-advisory',
     title: 'Corporate & Commercial Advisory',
     description: 'Strategic guidance for businesses at every stage of growth.',
     icon: 'business',
@@ -70,7 +70,7 @@ export const PRACTICE_AREAS: PracticeArea[] = [
     ]
   },
   {
-    id: 'dispute',
+    id: 'arbitration',
     title: 'Dispute Resolution & ADR',
     description: 'Resolving conflicts through strategic litigation and alternative means.',
     icon: 'balance',
