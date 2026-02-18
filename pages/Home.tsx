@@ -97,7 +97,13 @@ const Home: React.FC = () => {
             <div className="w-20 h-1 bg-accent-gold mx-auto mt-6"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PRACTICE_AREAS.map((area) => (
+            {PRACTICE_AREAS
+  .filter((area) =>
+    area.id === 'sports' ||
+    area.id === 'corporate-advisory' ||
+    area.id === 'arbitration'
+  )
+  .map((area) => (
               <div key={area.id} className="group p-8 bg-slate-50 dark:bg-secondary-grey/50 rounded-xl border border-transparent hover:border-accent-gold/20 transition-all hover:shadow-2xl hover:shadow-accent-gold/5 flex flex-col">
                 <div className="w-14 h-14 bg-accent-gold/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent-gold transition-colors shrink-0">
                   <span className="material-icons text-accent-gold group-hover:text-black">{area.icon}</span>
