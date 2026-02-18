@@ -85,12 +85,9 @@ const About: React.FC = () => {
                       <h4 className="text-[10px] font-black text-accent-gold uppercase tracking-[0.3em] mb-6">Practice Focus</h4>
                       <ul className="space-y-4">
                         {[
-                          'Corporate Restructuring',
-                          'Commercial Arbitration',
-                          'Football Law',
-                          'Intellectual Property',
-                          'Debt Recovery',
-                          'Advanced Legal Drafting'
+                          'Corporate Advisory',
+                          'Arbitration',
+                          'Sports Law',
                         ].map((item, i) => (
                           <li key={i} className="flex items-center gap-3 text-sm font-bold text-black dark:text-slate-200">
                             <span className="material-icons text-accent-gold text-lg">verified</span>
