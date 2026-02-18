@@ -27,7 +27,14 @@ const Practices: React.FC = () => {
       {/* Main Services Grid */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
-          {PRACTICE_AREAS.map((area, index) => (
+          {PRACTICE_AREAS
+  .filter(
+    (area) =>
+      area.id === 'sports' ||
+      area.id === 'corporate-advisory' ||
+      area.id === 'arbitration'
+  )
+  .map((area, index) => (
             <div 
               key={area.id} 
               id={area.id}
