@@ -11,7 +11,7 @@ With ten years of experience in private practice, Yahaya has advised clients on 
 
 He played a key role in the Gombe State House of Assembly Election Petition (2019), where his advocacy contributed to a favorable judgment and earned professional commendation from senior counsel. His intellectual property practice has grown through work with businesses and creators on trademark protection, copyright enforcement, and licensing structures aligned with Nigeria's IP regime and international best practices.
 
-Yahaya's professional interests include corporate restructuring, commercial arbitration, football law, intellectual property, debt recovery, and advanced legal drafting. He established Apex Advocates & Solicitors to provide clients with the technical expertise and strategic counsel of senior practitioners—delivered with the agility, transparency, and cost-efficiency of a specialist boutique firm.`,
+Yahaya's professional interests include corporate advisory, arbitration, sports law. He established Apex Advocates & Solicitors to provide clients with the technical expertise and strategic counsel of senior practitioners—delivered with the agility, transparency, and cost-efficiency of a specialist boutique firm.`,
   qualifications: [
     'LL.B, University of Jos',
     'Barrister & Solicitor of the Supreme Court of Nigeria (2015)',
