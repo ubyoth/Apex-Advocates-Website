@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center gap-4 group">
             <div className="w-12 h-12 flex items-center justify-center transition-transform group-hover:scale-110">
               <img 
-                src="https://res.cloudinary.com/dq7vjblwd/image/upload/v1771278934/Apex_Logo_l2egs3.png" 
+                src="/logo.png" 
                 alt="Apex Advocates Logo" 
                 className="w-full h-full object-contain filter drop-shadow-[0_0_8px_rgba(212,175,55,0.3)]"
                 onError={(e) => {
