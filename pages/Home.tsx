@@ -201,12 +201,12 @@ const Home: React.FC = () => {
             ].map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center opacity-100 hover:opacity-100 transition duration-500"
+                className="flex items-center justify-center opacity-100 transition duration-500"
               >
                 <img
                   src={logo}
                   alt={`Client ${index + 1}`}
-                  className="h-30 object-contain"
+                  className="h-[10.5rem] object-contain"
                 />
               </div>
             ))}
