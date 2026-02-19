@@ -192,7 +192,7 @@ const Home: React.FC = () => {
             <div className="w-20 h-1 bg-accent-gold mx-auto mt-6"></div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
             {[
               "https://res.cloudinary.com/dq7vjblwd/image/upload/v1771515568/Teambonding_Nigeria_bpyxvz.png",
               "/clients/client2.png",
@@ -201,12 +201,12 @@ const Home: React.FC = () => {
             ].map((logo, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0"
+                className="flex items-center justify-center opacity-100 hover:opacity-100 transition duration-500"
               >
                 <img
                   src={logo}
                   alt={`Client ${index + 1}`}
-                  className="h-14 object-contain"
+                  className="h-30 object-contain"
                 />
               </div>
             ))}
