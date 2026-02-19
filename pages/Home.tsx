@@ -194,7 +194,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 items-center">
             {[
-              "/clients/client1.png",
+              "/clients/teambondingpng.png",
               "/clients/client2.png",
               "/clients/client3.png",
               "/clients/client4.png",
