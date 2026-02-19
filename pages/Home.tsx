@@ -198,8 +198,6 @@ const Home: React.FC = () => {
               "/clients/client2.png",
               "/clients/client3.png",
               "/clients/client4.png",
-              "/clients/client5.png",
-              "/clients/client6.png",
             ].map((logo, index) => (
               <div
                 key={index}
