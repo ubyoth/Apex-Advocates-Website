@@ -195,7 +195,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
             {[
               "https://res.cloudinary.com/dq7vjblwd/image/upload/v1771515568/Teambonding_Nigeria_bpyxvz.png",
-              "/clients/client2.png",
+              "https://res.cloudinary.com/dq7vjblwd/image/upload/v1771517004/images_urbidu.jpg",
               "/clients/client3.png",
               "/clients/client4.png",
             ].map((logo, index) => (
