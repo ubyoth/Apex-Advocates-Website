@@ -178,6 +178,45 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+            {/* Clients Section */}
+      <section className="py-24 bg-white dark:bg-black border-t border-accent-gold/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center mb-16">
+            <h2 className="text-accent-gold font-bold uppercase tracking-widest text-sm mb-3">
+              Trusted By
+            </h2>
+            <h3 className="text-4xl font-extrabold text-black dark:text-white">
+              Our Clients
+            </h3>
+            <div className="w-20 h-1 bg-accent-gold mx-auto mt-6"></div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 items-center">
+            {[
+              "/clients/client1.png",
+              "/clients/client2.png",
+              "/clients/client3.png",
+              "/clients/client4.png",
+              "/clients/client5.png",
+              "/clients/client6.png",
+            ].map((logo, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center opacity-70 hover:opacity-100 transition duration-500 grayscale hover:grayscale-0"
+              >
+                <img
+                  src={logo}
+                  alt={`Client ${index + 1}`}
+                  className="h-14 object-contain"
+                />
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-black py-20 border-t border-accent-gold/20">
         <div className="max-w-5xl mx-auto px-4 text-center">
