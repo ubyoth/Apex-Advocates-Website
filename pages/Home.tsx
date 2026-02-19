@@ -199,14 +199,14 @@ const Home: React.FC = () => {
               "/clients/client3.png",
               "/clients/client4.png",
             ].map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center opacity-100 transition duration-500"
-              >
-                <img
-                  src={logo}
-                  alt={`Client ${index + 1}`}
-                  className="h-[10.5rem] object-contain"
+    <div
+      key={index}
+      className="flex items-center justify-center h-full"
+    >
+      <img
+        src={logo}
+        alt={`Client ${index + 1}`}
+        className="h-30 object-contain"
                 />
               </div>
             ))}
