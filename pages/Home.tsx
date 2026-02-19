@@ -194,7 +194,7 @@ const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-12 items-center">
             {[
-              "https://res.cloudinary.com/dq7vjblwd/image/upload/f_auto,q_auto/v1771514687/teambondingng_n9x9kn.png",
+              "https://res.cloudinary.com/dq7vjblwd/image/upload/f_auto,q_auto/v1771515001/teambonding_hgikfy.webp",
               "/clients/client2.png",
               "/clients/client3.png",
               "/clients/client4.png",
