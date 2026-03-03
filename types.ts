@@ -26,6 +26,9 @@ export interface BlogPost {
   category: string;
   imageUrl: string;
   featured?: boolean;
+
+  slug: string;
+  content: string;
 }
 
 export interface TeamMember {

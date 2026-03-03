@@ -12,7 +12,10 @@ import Practices from './pages/Practices';
 import About from './pages/About';
 import LegalAssistant from './components/LegalAssistant';
 import SurveyPopup from './components/SurveyPopup';
-
+import PostDetail from "./pages/PostDetail";
+import BridgeTransfers from "./content/knowledge/bridge-transfers-in-football";
+import FIFALicensing from "./content/knowledge/fifa-club-licensing-regulations";
+import FakeAgents from "./content/knowledge/fake-agent-nightmare";
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
@@ -46,6 +49,10 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/knowledge/bridge-transfers-in-football" element={<BridgeTransfers />} />
+            <Route path="/knowledge/fifa-club-licensing-regulations" element={<FIFALicensing/>} />
+            <Route path="/knowledge/fake-agent-nightmare" element={<FakeAgents/>} />
+            <Route path="/knowledge/:slug" element={<PostDetail />} />
           </Routes>
         </main>
         <Footer />

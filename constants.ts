@@ -119,35 +119,56 @@ export const SUCCESS_STORIES: SuccessStory[] = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    id: 'bp1',
-    title: "Bridge Transfers in Football: What you need to know",
-    excerpt: "Exploring the regulatory complexities and FIFA's stance on bridge transfers in domestic and international football. A critical analysis of player mobility and club obligations.",
-    author: 'Yahaya Othman',
-    date: 'Nov 12, 2024',
-    readTime: '6 min read',
-    category: 'Sports Law',
-    imageUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093&auto=format&fit=crop',
-    featured: true
-  },
+ 
   {
     id: 'bp2',
-    title: 'The Legal Framework of Player Contracts in the NPFL',
-    excerpt: 'Understanding the complexities of domestic football employment contracts and FIFA regulations in the local context.',
+    title: 'The FIFA Club Licensing Regulations: Responsibilities of Member Associations and Nigerian Clubs',
+    excerpt: 'This article explores the responsibilities of member associations under the FIFA CLR, with a particular focus on their impact on football clubs in Nigeria.',
     author: 'Yahaya Othman',
-    date: 'Oct 24, 2024',
+    date: 'Feb 27, 2026',
+    readTime: '3 min read',
+    category: 'Sports Law',
+    imageUrl: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=2069&auto=format&fit=crop',
+    featured: true,
+    slug: "fifa-club-licensing-regulations",
+    content: `The FIFA Club Licensing Regulations is a foundational document with the overall goal of standardizing and elevating football club management globally. 
+    `,
+  },
+
+  {
+    id: 'bp1',
+    title: 'FIFA’s Trial Rules vs. Africa’s Fake Agent Nightmare',
+    excerpt: 'The debilitating effects of fake agents scams under the guise of football trials are on the rise. These scams are defined by the pay-to-play philosphy, selling false hopes and dreams to desperate players. However, what do the regulations say on trials?',
+    author: 'Yahaya Othman',
+    date: 'Mar 3, 2026',
     readTime: '5 min read',
     category: 'Sports Law',
-    imageUrl: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=2069&auto=format&fit=crop'
+    imageUrl: 'https://res.cloudinary.com/dq7vjblwd/image/upload/v1772573045/FIFA_trials_vs._fake_agent_scam_2_pvl7g0.png',
+    featured: true,
+    slug: "fake-agent-nightmare",
+    content: `
+There is an increase in fake agent scams under the guise of football trials. These scams are defined by the pay-to-play philosophy, selling false hopes and dreams to desperate players.
+
+However, what do the regulations say on trials?
+    `,
   },
-  {
+
+{
     id: 'bp3',
-    title: '5 Reasons to Choose Arbitration Over Litigation',
-    excerpt: 'In commercial disputes, speed and confidentiality are paramount. We explore why ADR is becoming preferred for SMEs.',
+    title: "Bridge Transfers in Football: What you need to know",
+    excerpt: "This article examines the regulatory framework, legal implications, and compliance risks in bridge transfers. Legal practitioners must carefully evaluate intermediary structures to avoid sanctions. ",
     author: 'Yahaya Othman',
-    date: 'Oct 22, 2024',
-    readTime: '4 min read',
-    category: 'ADR Tips',
-    imageUrl: 'https://images.unsplash.com/photo-1423592707957-3b212afa6733?q=80&w=2070&auto=format&fit=crop'
-  }
+    date: 'Feb 18, 2026',
+    readTime: '3 min read',
+    category: 'Sports Law',
+    imageUrl: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093&auto=format&fit=crop',
+    featured: true,
+    slug: "bridge-transfers-in-football",
+    content: `Bridge transfers have become a focal issue in international football regulation.
+
+This article examines the regulatory framework, legal implications, and compliance risks.
+
+Legal practitioners must carefully evaluate intermediary structures to avoid sanctions.`,
+  },
+
 ];

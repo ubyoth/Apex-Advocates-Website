@@ -1,10 +1,14 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../constants';
 
 const KnowledgeCentre: React.FC = () => {
-  const articleUrl = "https://medium.com/@othmany13/bridge-transfers-in-football-what-you-need-to-know-0e434faf0fb1";
+const POSTS_PER_CLICK = 4;
+const [visiblePosts, setVisiblePosts] = useState(POSTS_PER_CLICK);
+const handleLoadMore = () => {
+  setVisiblePosts((prev) => prev + POSTS_PER_CLICK);
+};
 
   return (
     <div className="min-h-screen bg-background-light dark:bg-black py-16">
@@ -91,27 +95,26 @@ const KnowledgeCentre: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {BLOG_POSTS.map((post, i) => (
-                <article key={`${post.id}-${i}`} className="bg-white dark:bg-secondary-grey/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100 dark:border-accent-gold/5 group flex flex-col">
+              {BLOG_POSTS.slice(0, visiblePosts).map((post) => (
+                <article key={post.id} className="bg-white dark:bg-secondary-grey/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-slate-100 dark:border-accent-gold/5 group flex flex-col">
                   <div className="relative h-56 overflow-hidden">
                     <img className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src={post.imageUrl} alt={post.title} />
                     <span className="absolute top-4 left-4 bg-black text-accent-gold text-[10px] font-bold px-3 py-1 rounded uppercase tracking-widest border border-accent-gold/20">{post.category}</span>
                   </div>
                   <div className="p-8 flex-grow flex flex-col">
                     <p className="text-[10px] text-accent-gold font-black uppercase mb-3 tracking-widest opacity-70">{post.date} • {post.readTime}</p>
-                    <a href={articleUrl} target="_blank" rel="noopener noreferrer">
-                      <h3 className="text-xl font-bold mb-4 text-black dark:text-white leading-tight group-hover:text-accent-gold transition-colors cursor-pointer">{post.title}</h3>
-                    </a>
+                    <Link to={`/knowledge/${post.slug}`}>
+  <h3 className="text-xl font-bold mb-4 text-black dark:text-white leading-tight group-hover:text-accent-gold transition-colors cursor-pointer">
+    {post.title}
+  </h3>
+</Link>
                     <p className="text-sm text-slate-600 dark:text-slate-400 mb-8 line-clamp-3 leading-relaxed flex-grow">{post.excerpt}</p>
                     
-                    <a 
-                      href={articleUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-accent-gold text-xs font-bold flex items-center gap-2 mb-6 group-hover:gap-3 transition-all"
-                    >
-                      Read Full Brief <span className="material-icons text-sm">east</span>
-                    </a>
+                    <Link to={`/knowledge/${post.slug}`}
+  className="text-accent-gold text-xs font-bold flex items-center gap-2 mb-6 group-hover:gap-3 transition-all"
+>
+  Read Full Brief <span className="material-icons text-sm">east</span>
+</Link>
 
                     <div className="pt-6 border-t border-slate-100 dark:border-accent-gold/10 flex items-center justify-between">
                       <span className="text-xs font-bold text-black dark:text-slate-300">By {post.author}</span>
@@ -125,11 +128,20 @@ const KnowledgeCentre: React.FC = () => {
               ))}
             </div>
             
-            <div className="flex justify-center pt-8">
-              <button className="flex items-center gap-3 border-2 border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-black px-10 py-4 rounded-xl font-bold transition-all group">
-                Load More Articles <span className="material-icons text-lg group-hover:rotate-180 transition-transform duration-700">refresh</span>
-              </button>
-            </div>
+<div className="flex justify-center pt-8">
+  {visiblePosts < BLOG_POSTS.length && (
+    <button
+      type="button"
+      onClick={handleLoadMore}
+      className="flex items-center gap-3 border-2 border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-black px-10 py-4 rounded-xl font-bold transition-all group"
+    >
+      Load More Articles
+      <span className="material-icons text-lg group-hover:rotate-180 transition-transform duration-700">
+        refresh
+      </span>
+    </button>
+  )}
+</div>
           </div>
 
           {/* Sidebar */}
@@ -147,20 +159,7 @@ const KnowledgeCentre: React.FC = () => {
               <div className="absolute -bottom-20 -right-20 w-60 h-60 bg-accent-gold/5 rounded-full blur-3xl"></div>
             </div>
 
-            {/* Case Inquiry */}
-            <div className="bg-accent-gold rounded-3xl p-10 text-black shadow-2xl">
-              <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter leading-none">Legal <br/>Inquiry?</h3>
-              <p className="text-black/60 text-sm mb-10 font-medium leading-relaxed">Our experts are ready to assist you with your specific requirements. Confidential and professional.</p>
-              <a 
-                href="https://calendly.com/othmany13/30min" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-between w-full bg-black text-white px-2 py-4 rounded-xl font-bold hover:gap-6 transition-all"
-              >
-                Schedule <span className="material-icons">arrow_right_alt</span>
-              </a>
-            </div>
-          </aside>
+            </aside>
         </div>
       </div>
     </div>
