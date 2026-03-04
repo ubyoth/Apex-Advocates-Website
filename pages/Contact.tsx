@@ -179,7 +179,7 @@ const Contact: React.FC = () => {
               </p>
               <div className="space-y-10">
                 {[
-                  { icon: 'email', title: 'Email Us', detail: 'othman@apexsportslaw.com' },
+                  { icon: 'email', title: 'Email Us', detail: 'info@apexsportslaw.com' },
                   { icon: 'phone', title: 'Call Our Office', detail: '+234 8163216169' },
                   { icon: 'location_on', title: 'Visit Us', detail: 'Lagos, Nigeria' },
                 ].map((item, i) => (
