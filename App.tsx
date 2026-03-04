@@ -10,7 +10,6 @@ import Contact from './pages/Contact';
 import SportsLaw from './pages/SportsLaw';
 import Practices from './pages/Practices';
 import About from './pages/About';
-import LegalAssistant from './components/LegalAssistant';
 import SurveyPopup from './components/SurveyPopup';
 import PostDetail from "./pages/PostDetail";
 import BridgeTransfers from "./content/knowledge/bridge-transfers-in-football";
@@ -68,7 +67,6 @@ const App: React.FC = () => {
 </Routes>
         </main>
         <Footer />
-        <LegalAssistant />
         <SurveyPopup />
         <WhatsAppButton />
       </div>
