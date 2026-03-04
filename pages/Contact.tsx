@@ -1,6 +1,44 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+function encode(data: Record<string, string>) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
 
 const Contact: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    // Build a plain object for encoding
+    const payload: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      payload[key] = String(value);
+    });
+
+    try {
+      // IMPORTANT: POST to "/" so Netlify Forms captures it
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode(payload),
+      });
+
+      if (!res.ok) throw new Error('Form submission failed');
+
+      // Navigate inside the SPA (HashRouter will show #/thank-you automatically)
+      navigate('/thank-you');
+    } catch (err) {
+      alert('Sorry—your message could not be sent. Please try again.');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero */}
@@ -49,16 +87,15 @@ const Contact: React.FC = () => {
               Expect a response from our senior associate within one business day.
             </p>
 
-            {/* ✅ NETLIFY FORM (replaces Formspree) */}
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/#/thank-you"
-  className="space-y-8"
->
-              {/* Netlify required hidden fields */}
+            {/* Netlify Form (captured by Netlify) */}
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-8"
+            >
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
                 <label>
@@ -79,6 +116,7 @@ const Contact: React.FC = () => {
                     className="w-full px-6 py-4 rounded-xl border border-slate-200 dark:border-accent-gold/20 bg-slate-50 dark:bg-black text-white focus:ring-2 focus:ring-accent-gold/20 outline-none transition-all"
                   />
                 </div>
+
                 <div className="space-y-3">
                   <label className="text-xs font-black text-black dark:text-accent-gold uppercase tracking-widest">
                     Email Address
@@ -141,7 +179,7 @@ const Contact: React.FC = () => {
               </p>
               <div className="space-y-10">
                 {[
-                  { icon: 'email', title: 'Email Us', detail: 'info@apexsportslaw.com' },
+                  { icon: 'email', title: 'Email Us', detail: 'othman@apexsportslaw.com' },
                   { icon: 'phone', title: 'Call Our Office', detail: '+234 8163216169' },
                   { icon: 'location_on', title: 'Visit Us', detail: 'Lagos, Nigeria' },
                 ].map((item, i) => (
@@ -171,10 +209,7 @@ const Contact: React.FC = () => {
                   <span className="font-semibold text-slate-600 dark:text-slate-400">Saturday</span>
                   <span className="font-bold text-black dark:text-white">9:00 AM - 1:00 PM</span>
                 </div>
-                <div className="flex justify-between items-center">
-                  <span className="font-semibold text-slate-600 dark:text-slate-400">Sunday</span>
-                  <span className="font-bold text-accent-gold italic">By Appointment Only</span>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -192,9 +227,7 @@ const Contact: React.FC = () => {
           <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
           <div className="absolute top-10 left-10 bg-black dark:bg-black p-10 rounded-3xl shadow-2xl border border-accent-gold/30 max-w-sm backdrop-blur-xl bg-opacity-90">
             <h4 className="text-2xl font-bold text-white mb-3">Lagos Office</h4>
-            <p className="text-sm text-slate-400 mb-8 leading-relaxed">
-              Centrally located in the business hub of Lagos for our corporate partners.
-            </p>
+            <p className="text-sm text-slate-400 mb-8 leading-relaxed">Centrally located in the business hub of Lagos for our corporate partners.</p>
             <a
               href="https://maps.google.com"
               target="_blank"
