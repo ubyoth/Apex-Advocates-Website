@@ -50,13 +50,12 @@ const Contact: React.FC = () => {
             </p>
 
             {/* ✅ NETLIFY FORM (replaces Formspree) */}
-            <form
+<form
   name="contact"
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  data-netlify-success-url="/thank-you"
-  action="/thank-you"
+  data-netlify-success-url="/#/thank-you"
   className="space-y-8"
 >
               {/* Netlify required hidden fields */}

@@ -42,20 +42,29 @@ const App: React.FC = () => {
         <Navbar />
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/practices" element={<Practices />} /> 
-            <Route path="/practices/sports" element={<SportsLaw />} />
-            <Route path="/success-stories" element={<SuccessStories />} />
-            <Route path="/knowledge" element={<KnowledgeCentre />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-            <Route path="/knowledge/bridge-transfers-in-football" element={<BridgeTransfers />} />
-            <Route path="/knowledge/fifa-club-licensing-regulations" element={<FIFALicensing/>} />
-            <Route path="/knowledge/fake-agent-nightmare" element={<FakeAgents/>} />
-            <Route path="/knowledge/:slug" element={<PostDetail />} />
-            <Route path="/thank-you" element={<ThankYou />} />
-          </Routes>
+  {/* Main pages */}
+  <Route path="/" element={<Home />} />
+  <Route path="/practices" element={<Practices />} />
+  <Route path="/practices/sports" element={<SportsLaw />} />
+  <Route path="/success-stories" element={<SuccessStories />} />
+  <Route path="/knowledge" element={<KnowledgeCentre />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+
+  {/* ✅ Thank you page */}
+  <Route path="/thank-you" element={<ThankYou />} />
+
+  {/* Knowledge articles (specific first) */}
+  <Route path="/knowledge/bridge-transfers-in-football" element={<BridgeTransfers />} />
+  <Route path="/knowledge/fifa-club-licensing-regulations" element={<FIFALicensing />} />
+  <Route path="/knowledge/fake-agent-nightmare" element={<FakeAgents />} />
+
+  {/* Dynamic post route LAST among /knowledge routes */}
+  <Route path="/knowledge/:slug" element={<PostDetail />} />
+
+  {/* ✅ Catch-all LAST */}
+  <Route path="*" element={<Navigate to="/" replace />} />
+</Routes>
         </main>
         <Footer />
         <LegalAssistant />
