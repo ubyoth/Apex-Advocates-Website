@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
         href="mailto:othman@apexsportslaw.com"
         className="hover:text-accent-gold transition-colors break-all"
       >
-        othman@apexsportslaw.com
+        info@apexsportslaw.com
       </a>
     </div>
 
