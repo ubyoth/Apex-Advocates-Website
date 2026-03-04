@@ -51,12 +51,14 @@ const Contact: React.FC = () => {
 
             {/* ✅ NETLIFY FORM (replaces Formspree) */}
             <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              className="space-y-8"
-            >
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  data-netlify-success-url="/thank-you"
+  action="/thank-you"
+  className="space-y-8"
+>
               {/* Netlify required hidden fields */}
               <input type="hidden" name="form-name" value="contact" />
               <p className="hidden">
@@ -140,7 +142,7 @@ const Contact: React.FC = () => {
               </p>
               <div className="space-y-10">
                 {[
-                  { icon: 'email', title: 'Email Us', detail: 'othman@apexsportslaw.com' },
+                  { icon: 'email', title: 'Email Us', detail: 'info@apexsportslaw.com' },
                   { icon: 'phone', title: 'Call Our Office', detail: '+234 8163216169' },
                   { icon: 'location_on', title: 'Visit Us', detail: 'Lagos, Nigeria' },
                 ].map((item, i) => (
