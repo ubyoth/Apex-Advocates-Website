@@ -179,17 +179,41 @@ const Contact: React.FC = () => {
               </p>
               <div className="space-y-10">
                 {[
-                  { icon: 'email', title: 'Email Us', detail: 'info@apexsportslaw.com' },
-                  { icon: 'phone', title: 'Call Our Office', detail: '+234 8163216169' },
-                  { icon: 'location_on', title: 'Visit Us', detail: 'Lagos, Nigeria' },
-                ].map((item, i) => (
+  {
+    icon: 'email',
+    title: 'Email Us',
+    detail: 'othman@apexsportslaw.com',
+    link: 'mailto:othman@apexsportslaw.com'
+  },
+  {
+    icon: 'phone',
+    title: 'Call Our Office',
+    detail: '+234 8163216169',
+    link: 'tel:+2348163216169'
+  },
+  {
+    icon: 'location_on',
+    title: 'Visit Us',
+    detail: 'Lagos, Nigeria',
+    link: null
+  }
+].map((item, i) => (
                   <div key={i} className="flex items-start gap-6 group">
                     <div className="w-16 h-16 rounded-2xl bg-accent-gold/10 flex items-center justify-center flex-shrink-0 border border-accent-gold/10 group-hover:bg-accent-gold transition-all group-hover:scale-110">
                       <span className="material-icons text-accent-gold text-3xl group-hover:text-black">{item.icon}</span>
                     </div>
                     <div>
                       <h4 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">{item.title}</h4>
-                      <p className="text-2xl font-bold text-black dark:text-white">{item.detail}</p>
+                      {item.link ? (
+  <a
+    href={item.link}
+    className="text-2xl font-bold text-black dark:text-white hover:text-accent-gold transition-colors"
+  >
+    {item.detail}
+  </a>
+) : (
+  <p className="text-2xl font-bold text-black dark:text-white">{item.detail}</p>
+)}
                     </div>
                   </div>
                 ))}

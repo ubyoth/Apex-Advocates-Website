@@ -51,23 +51,36 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 border-b border-accent-gold/30 pb-2 text-accent-gold">Contact Us</h4>
-            <div className="space-y-4 text-sm">
-              <div className="flex items-start gap-3 text-slate-400">
-                <span className="material-icons text-accent-gold">email</span>
-                <span>apexadvocatesandsolicitors@gmail.com</span>
-              </div>
-              <div className="flex items-start gap-3 text-slate-400">
-                <span className="material-icons text-accent-gold">phone</span>
-                <span>+234 8163216169</span>
-              </div>
-              <div className="flex items-start gap-3 text-slate-400">
-                <span className="material-icons text-accent-gold">location_on</span>
-                <span>Lagos, Nigeria</span>
-              </div>
-            </div>
-          </div>
+{/* Contact Info */}
+<div>
+  <h4 className="text-lg font-bold mb-6 border-b border-accent-gold/30 pb-2 text-accent-gold">Contact Us</h4>
+  <div className="space-y-4 text-sm">
+    <div className="flex items-start gap-3 text-slate-400">
+      <span className="material-icons text-accent-gold">email</span>
+      <a
+        href="mailto:othman@apexsportslaw.com"
+        className="hover:text-accent-gold transition-colors break-all"
+      >
+        othman@apexsportslaw.com
+      </a>
+    </div>
+
+    <div className="flex items-start gap-3 text-slate-400">
+      <span className="material-icons text-accent-gold">phone</span>
+      <a
+        href="tel:+2348163216169"
+        className="hover:text-accent-gold transition-colors"
+      >
+        +234 8163216169
+      </a>
+    </div>
+
+    <div className="flex items-start gap-3 text-slate-400">
+      <span className="material-icons text-accent-gold">location_on</span>
+      <span>Lagos, Nigeria</span>
+    </div>
+  </div>
+</div>
 
           {/* Location Map Placeholder */}
           <div className="space-y-4">
