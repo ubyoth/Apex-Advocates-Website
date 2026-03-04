@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  data-netlify-success-url="/#/thank-you"
+  action="/#/thank-you"
   className="space-y-8"
 >
               {/* Netlify required hidden fields */}
