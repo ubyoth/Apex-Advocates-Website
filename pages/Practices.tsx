@@ -160,7 +160,7 @@ const Practices: React.FC = () => {
                   </Link>
                 ) : (
                   <a
-                    href="https://calendly.com/othmany13/30min"
+                    href="https://calendly.com//apexsportslaw/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 bg-black dark:bg-accent-gold text-white dark:text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:gap-6 transition-all shadow-xl"
