@@ -66,17 +66,17 @@ const Home: React.FC = () => {
     <>
       <Helmet>
         {/* Primary SEO */}
-        <title>Sports Lawyer in Nigeria | Apex Advocates & Solicitors</title>
+        <title>Sports Lawyer in Nigeria | Apex Sports Law</title>
         <meta
           name="description"
-          content="Apex Advocates & Solicitors is a Lagos-based law firm advising footballers, agents and clubs on football contracts, transfers, FIFA regulations, sports arbitration and dispute resolution."
+          content="Apex Sports Law is a Lagos-based law firm advising footballers, agents and clubs on football contracts, transfers, FIFA regulations, sports arbitration and dispute resolution."
         />
         <link rel="canonical" href={`${SITE_URL}/`} />
         <link rel="manifest" href="/site.webmanifest" />
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Apex Advocates & Solicitors" />
-        <meta property="og:title" content="Sports Lawyer in Nigeria | Apex Advocates & Solicitors" />
+        <meta property="og:site_name" content="Apex Sports Law" />
+        <meta property="og:title" content="Sports Lawyer in Nigeria | Apex Sports Law" />
         <meta
           property="og:description"
           content="Legal support for footballers, agents and clubs: contracts, transfers, FIFA regulations, arbitration and dispute resolution."
@@ -88,7 +88,7 @@ const Home: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Sports Lawyer in Nigeria | Apex Advocates & Solicitors"
+          content="Sports Lawyer in Nigeria | Apex Sports Law"
         />
         <meta
           name="twitter:description"
@@ -101,7 +101,7 @@ const Home: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "Apex Advocates & Solicitors",
+            name: "Apex Sports Law",
             url: SITE_URL,
             potentialAction: {
               "@type": "SearchAction",
@@ -116,7 +116,7 @@ const Home: React.FC = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LegalService",
-            name: "Apex Advocates & Solicitors",
+            name: "Apex Sports Law",
             url: SITE_URL,
             areaServed: "NG",
             address: {
@@ -156,7 +156,7 @@ const Home: React.FC = () => {
               </h1>
 
               <p className="text-xl text-slate-300 mb-10 leading-relaxed font-light">
-                Apex Advocates & Solicitors advises footballers, agents and clubs on:
+                Apex Sports Law advises footballers, agents and clubs on:
                 football contracts and player transfers, FIFA transfer regulations,
                 sports arbitration and dispute resolution, image rights and sponsorship
                 agreements.
@@ -241,7 +241,7 @@ const Home: React.FC = () => {
               {/* Image Column */}
               <div className="w-full md:w-[30%] relative">
                 <img
-                  alt="Yahaya Oruma Othman, Founder of Apex Advocates & Solicitors"
+                  alt="Yahaya Oruma Othman, Founder of Apex Sports Law"
                   className="w-full h-full min-h-[450px] object-cover object-top grayscale hover:grayscale-0 transition-all duration-1000"
                   src={FOUNDER_BIO.imageUrl}
                   loading="lazy"
@@ -265,8 +265,7 @@ const Home: React.FC = () => {
                 </p>
 
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                  Yahaya Oruma Othman is the Founder and Principal Partner of Apex Advocates &
-                  Solicitors.
+                  Yahaya Oruma Othman is the Founder and Principal Partner of Apex Sports Law.
                 </p>
 
                 <div className="flex flex-wrap gap-8 mb-10">
@@ -343,7 +342,7 @@ const Home: React.FC = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://calendly.com/othmany13/30min"
+                href="https://calendly.com/apexsportslaw/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20"
