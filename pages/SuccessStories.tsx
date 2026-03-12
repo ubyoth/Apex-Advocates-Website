@@ -16,7 +16,7 @@ const SuccessStories: React.FC = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-accent-gold/10 text-accent-gold text-xs font-bold uppercase tracking-wider mb-6 border border-accent-gold/20">Proven Results</span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">Success Stories</h1>
           <p className="max-w-2xl mx-auto text-lg text-slate-400">
-            At Apex Advocates & Solicitors, we measure our success by the victories of our clients. Explore how we’ve navigated complex legal landscapes to deliver exceptional outcomes through meticulous strategy.
+            At Apex Sports Law, we measure our success by the victories of our clients. Explore how we’ve navigated complex legal landscapes to deliver exceptional outcomes through meticulous strategy.
           </p>
         </div>
       </header>
@@ -68,7 +68,7 @@ const SuccessStories: React.FC = () => {
           <h2 className="text-4xl font-bold text-white mb-6">Need Expert Legal Counsel?</h2>
           <p className="text-slate-400 text-lg mb-12">Our success stories are built on meticulous attention to detail and unwavering client advocacy. Our founding partner, Yahaya Oruma Othman, ensures every case reflects a decade of excellence.</p>
           <a 
-            href="https://calendly.com/othmany13/30min" 
+            href="https://calendly.com/apexsportslaw/30min" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-accent-gold text-black px-8 py-3.5 rounded-lg font-bold text-base hover:bg-yellow-600 transition-all shadow-2xl shadow-accent-gold/20"
