@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <a 
-              href="https://calendly.com/othmany13/30min" 
+              href="https://calendly.com/apexsportslaw/30min" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-accent-gold hover:bg-yellow-400 text-black px-4 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-accent-gold/20"
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             <a 
-              href="https://calendly.com/othmany13/30min" 
+              href="https://calendly.com/apexsportslaw/30min" 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
