@@ -99,8 +99,8 @@ const KnowledgeCentre: React.FC = () => {
         image: post.imageUrl ? [post.imageUrl] : undefined,
         author: post.author
           ? { "@type": "Person", name: post.author }
-          : { "@type": "Organization", name: "Apex Advocates & Solicitors" },
-        publisher: { "@type": "Organization", name: "Apex Advocates & Solicitors" },
+          : { "@type": "Organization", name: "Apex Sports Law" },
+        publisher: { "@type": "Organization", name: "Apex Sports Law" },
 
         // SEO-friendly dates if available
         datePublished: iso,
@@ -111,7 +111,7 @@ const KnowledgeCentre: React.FC = () => {
     return {
       "@context": "https://schema.org",
       "@type": "Blog",
-      name: "Apex Advocates Knowledge Centre",
+      name: "Apex Sports Law Knowledge Centre",
       url: PAGE_URL,
       description:
         "Legal insights on sports law, FIFA regulations, football contracts, arbitration and dispute resolution.",
@@ -123,17 +123,17 @@ const KnowledgeCentre: React.FC = () => {
     <>
       <Helmet>
         {/* Primary SEO */}
-        <title>Sports Law Articles & Legal Briefs | Apex Advocates Knowledge Centre</title>
+        <title>Sports Law Articles & Legal Briefs | Apex Sports Law Knowledge Centre</title>
         <meta
           name="description"
-          content="Legal insights on sports law, FIFA regulations, football contracts, arbitration and dispute resolution from Apex Advocates & Solicitors in Lagos, Nigeria."
+          content="Legal insights on sports law, FIFA regulations, football contracts, arbitration and dispute resolution from Apex Sports Law in Lagos, Nigeria."
         />
         <link rel="canonical" href={PAGE_URL} />
         <meta name="robots" content="index,follow" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Apex Advocates & Solicitors" />
+        <meta property="og:site_name" content="Apex Sports Law" />
         <meta
           property="og:title"
           content="Apex Knowledge Centre | Sports Law Articles & Legal Briefs"
@@ -149,7 +149,7 @@ const KnowledgeCentre: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Apex Knowledge Centre | Sports Law Articles & Legal Briefs"
+          content="Apex Sports Law Knowledge Centre | Sports Law Articles & Legal Briefs"
         />
         <meta
           name="twitter:description"
@@ -223,7 +223,7 @@ const KnowledgeCentre: React.FC = () => {
                   </span>
 
                   <h3 className="text-2xl font-bold text-white mb-6 leading-tight">
-                    Apex Advocates & Solicitors Officially Launches in Lagos
+                    Apex Sports Law Officially Launches in Lagos
                   </h3>
 
                   <p className="text-xs text-slate-400 leading-relaxed">
