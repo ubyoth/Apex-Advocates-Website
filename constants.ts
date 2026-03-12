@@ -5,15 +5,17 @@ export const FOUNDER_BIO: TeamMember = {
   name: 'Yahaya Oruma Othman, Esq.',
   role: 'Founder & Principal Partner',
   imageUrl: 'https://res.cloudinary.com/dq7vjblwd/image/upload/v1771278933/1740250408076_jnhl5j.jpg',
-  bio: `Yahaya Oruma Othman is the Founder and Principal Partner of Apex Advocates & Solicitors. He holds an LL.B from the University of Jos and was called to the Nigerian Bar in 2015 as a Barrister and Solicitor of the Supreme Court of Nigeria. He is a member of the Nigerian Bar Association (NBA) and an Associate of the Chartered Institute of Arbitrators (United Kingdom).
+  bio: `Yahaya Oruma Othman is the Founder and Principal Partner of Apex Sports Law. He holds an LL.B from the University of Jos and was called to the Nigerian Bar in 2015 as a Barrister and Solicitor of the Supreme Court of Nigeria. He is a member of the Nigerian Bar Association (NBA) and an Associate of the Chartered Institute of Arbitrators (United Kingdom).
 
 With ten years of experience in private practice, Yahaya has advised clients on corporate transactions, arbitration, contract law, labour and employment disputes, garnishee proceedings, and commercial litigation. His track record includes successfully representing parties in high-stakes disputes, navigating complex regulatory environments, and delivering pragmatic solutions to commercial challenges.
 
 He played a key role in the Gombe State House of Assembly Election Petition (2019), where his advocacy contributed to a favorable judgment and earned professional commendation from senior counsel. His intellectual property practice has grown through work with businesses and creators on trademark protection, copyright enforcement, and licensing structures aligned with Nigeria's IP regime and international best practices.
 
-Yahaya's professional interests include corporate advisory, arbitration, sports law. He established Apex Advocates & Solicitors to provide clients with the technical expertise and strategic counsel of senior practitioners—delivered with the agility, transparency, and cost-efficiency of a specialist boutique firm.`,
+Yahaya's professional interests include corporate advisory, arbitration, sports law. He established Apex Sports Law to provide legal counsel to footballers, agents and clubs on: football contracts and player transfers, FIFA transfer regulations, sports arbitration and dispute resolution, image rights and sponsorship agreements. Delivered with the agility, transparency, and cost-efficiency of a specialist boutique firm.`,
   qualifications: [
+    'Master in International Sports Law (in view) – ISDE' 
     'LL.B, University of Jos',
+    'Business of Sports Institute (BOI), Sports Business & Administration Course'
     'Barrister & Solicitor of the Supreme Court of Nigeria (2015)',
     'Member, Nigerian Bar Association (NBA)',
     'Associate, Chartered Institute of Arbitrators (UK)'
@@ -96,7 +98,7 @@ export const SUCCESS_STORIES: SuccessStory[] = [
     id: 'ss2',
     category: 'Labour Law',
     title: 'Recovery of ₦1M+ in Employment Disputes',
-    challenge: 'A high-level employee faced wrongful denial of salary arrears and earned bonuses in a complex workplace conflict.',
+    challenge: 'An employee faced wrongful denial of salary arrears and earned bonuses in a complex workplace conflict.',
     result: 'Secured the successful recovery of arrears exceeding ₦1,000,000 and negotiated over a dozen employment agreements for diverse clients.',
     imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop'
   },
