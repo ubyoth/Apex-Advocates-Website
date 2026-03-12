@@ -33,8 +33,8 @@ const Navbar: React.FC = () => {
               />
             </div>
             <div className="flex flex-col leading-none">
-              <span className="text-xl font-extrabold tracking-tight text-primary dark:text-white uppercase">Apex Advocates</span>
-              <span className="text-[10px] tracking-[0.2em] text-accent-gold font-semibold uppercase"> & Solicitors</span>
+              <span className="text-xl font-extrabold tracking-tight text-primary dark:text-white uppercase">Apex</span>
+              <span className="text-[10px] tracking-[0.2em] text-accent-gold font-semibold uppercase"> Sports Law</span>
             </div>
           </Link>
 
