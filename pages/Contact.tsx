@@ -1,46 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 
 const SITE_URL = "https://apexsportslaw.com";
 const PAGE_URL = `${SITE_URL}/contact`;
-const OG_IMAGE = `${SITE_URL}/og/contact.jpg`;
-const OG_IMAGE_FALLBACK = `${SITE_URL}/og/default.jpg`;
-
-function encode(data: Record<string, string>) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
+const OG_IMAGE = `${SITE_URL}/screenshot.png`;
 
 const Contact: React.FC = () => {
   const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const payload: Record<string, string> = {};
-    formData.forEach((value, key) => {
-      payload[key] = String(value);
-    });
+    const payload = {
+      name: String(formData.get("name") || "").trim(),
+      email: String(formData.get("email") || "").trim(),
+      service: String(formData.get("service") || "").trim(),
+      message: String(formData.get("message") || "").trim(),
+    };
 
     try {
-      // Netlify Forms: POST to "/" so Netlify captures it
-      const res = await fetch("/", {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
 
-      if (!res.ok) throw new Error("Form submission failed");
+      if (!res.ok) {
+        throw new Error("Form submission failed");
+      }
 
-      // BrowserRouter: clean route
+      form.reset();
       navigate("/thank-you");
-    } catch {
+    } catch (error) {
+      console.error(error);
       alert("Sorry—your message could not be sent. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -72,7 +75,6 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        {/* Primary SEO */}
         <title>Contact a Sports Lawyer in Nigeria | Apex Sports Law</title>
         <meta
           name="description"
@@ -81,7 +83,6 @@ const Contact: React.FC = () => {
         <link rel="canonical" href={PAGE_URL} />
         <meta name="robots" content="index,follow" />
 
-        {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Apex Sports Law" />
         <meta property="og:title" content="Contact | Apex Sports Law" />
@@ -95,13 +96,6 @@ const Contact: React.FC = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
-        {/* Fallback social image (safe if contact.jpg isn't created yet) */}
-        <meta property="og:image" content={OG_IMAGE_FALLBACK} />
-        <meta property="og:image:secure_url" content={OG_IMAGE_FALLBACK} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-
-        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact | Apex Sports Law" />
         <meta
@@ -110,7 +104,6 @@ const Contact: React.FC = () => {
         />
         <meta name="twitter:image" content={OG_IMAGE} />
 
-        {/* Structured Data: Contact Page */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -135,7 +128,6 @@ const Contact: React.FC = () => {
       </Helmet>
 
       <div className="min-h-screen bg-white dark:bg-black">
-        {/* Hero */}
         <section className="relative py-24 bg-black overflow-hidden border-b border-accent-gold/10">
           <div className="absolute inset-0 opacity-20 pointer-events-none grayscale">
             <img
@@ -176,10 +168,8 @@ const Contact: React.FC = () => {
           </div>
         </section>
 
-        {/* Main Content */}
         <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
-            {/* Form */}
             <div
               id="direct-inquiry"
               className="bg-white dark:bg-secondary-grey/5 rounded-3xl p-10 lg:p-14 shadow-2xl border border-slate-100 dark:border-accent-gold/10 scroll-mt-32"
@@ -189,24 +179,7 @@ const Contact: React.FC = () => {
                 Expect a response within one business day.
               </p>
 
-              {/* Netlify Form */}
-              <form
-                name="contact"
-                method="POST"
-                action="/thank-you"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-                className="space-y-8"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-
-                <p className="hidden">
-                  <label>
-                    Don&apos;t fill this out: <input name="bot-field" />
-                  </label>
-                </p>
-
+              <form onSubmit={handleSubmit} className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
                     <label
@@ -282,9 +255,10 @@ const Contact: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-accent-gold text-black py-5 rounded-xl font-black text-lg hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20 flex items-center justify-center gap-3 group"
+                  disabled={isSubmitting}
+                  className="w-full bg-accent-gold text-black py-5 rounded-xl font-black text-lg hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20 flex items-center justify-center gap-3 group disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Submit Inquiry{" "}
+                  {isSubmitting ? "Sending..." : "Submit Inquiry"}
                   <span className="material-icons group-hover:translate-x-1 transition-transform">
                     send
                   </span>
@@ -292,7 +266,6 @@ const Contact: React.FC = () => {
               </form>
             </div>
 
-            {/* Contact Details */}
             <div className="space-y-12">
               <div>
                 <h2 className="text-4xl font-bold text-black dark:text-white mb-6">
@@ -363,7 +336,6 @@ const Contact: React.FC = () => {
           </div>
         </section>
 
-        {/* Map Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
           <div className="rounded-[2.5rem] overflow-hidden shadow-2xl h-[550px] relative group border-8 border-white dark:border-accent-gold/10">
             <img
