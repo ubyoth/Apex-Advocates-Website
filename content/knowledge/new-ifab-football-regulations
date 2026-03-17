@@ -175,16 +175,31 @@ const NewIFABFootballRegulations: React.FC = () => {
 
           <div className="space-y-6 text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
             <p>
-              Since its inception, football and its regulations have undergone constant
-              modification in an attempt to make the game more dynamic and enjoyable for
-              players, officials, and fans alike. Following recommendations from the
-              International Football Association Board’s Football and Technical Advisory
-              Panels, IFAB has approved a number of changes aimed at reducing
+              Since its inception, football and its regulations have undergone, and are 
+              undergoing, constant modifications to give the game more dynamism and thrill
+              that fans desperately crave. Following calls from the International Football 
+              Association Board’s (IFAB)  {" "}
+            <a
+             href="https://theifab.com/news/advisory-panels-of-the-ifab-discuss-further-ways-of-improving-match-flow-and-redu/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="text-accent-gold font-semibold hover:underline"
+            >
+             Football and Technical Advisory Panels
+            </a>{" "} has approved a number of changes aimed at reducing
               time-wasting, minimising stoppages, and increasing effective playing time.
             </p>
 
             <p>
-              According to a report published by the Premier League in January 2024, the
+              According to a {" "}
+            <a
+             href="https://www.premierleague.com/en/news/3860720"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="text-accent-gold font-semibold hover:underline"
+            >
+             report
+            </a>{" "} published by the Premier League in January 2024, the
               ball is in play for only about 55 minutes in a typical 90-minute match, with
               the remainder lost to substitutions, delays, goal kicks, and other stoppages.
               The new IFAB measures are intended to address these interruptions and keep
