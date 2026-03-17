@@ -177,4 +177,20 @@ This article examines the regulatory framework, legal implications, and complian
 
 Legal practitioners must carefully evaluate intermediary structures to avoid sanctions.`,
   },
+
+  {
+  id: "bp4",
+  title: "The New IFAB Football Regulations: What Players, Clubs and Officials Should Know",
+  excerpt:
+    "A practical overview of the latest IFAB football regulation changes on throw-ins, goal kicks, substitutions, injuries and VAR protocol developments.",
+  author: "Yahaya Othman",
+  date: "2026-03-17",
+  readTime: "4 min read",
+  category: "Sports Law",
+  imageUrl:
+    "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093&auto=format&fit=crop",
+  featured: true,
+  slug: "new-ifab-football-regulations",
+  content: `IFAB has approved a number of football regulation changes aimed at reducing time-wasting, minimising stoppages, and increasing effective playing time.`,
+},
 ];
