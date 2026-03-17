@@ -327,7 +327,7 @@ const KnowledgeCentre: React.FC = () => {
 
                         <div className="pt-6 border-t border-slate-100 dark:border-accent-gold/10 flex items-center justify-between">
                           <span className="text-xs font-bold text-black dark:text-slate-300">
-                            By {post.author || "Apex Advocates"}
+                            By {post.author || "Apex Sports Law"}
                           </span>
 
                           <div className="flex gap-4">
