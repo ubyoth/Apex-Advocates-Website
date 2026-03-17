@@ -160,7 +160,7 @@ const Practices: React.FC = () => {
                   </Link>
                 ) : (
                   <a
-                    href="https://calendly.com//apexsportslaw/30min"
+                    href="https://calendly.com/apexsportslaw-info/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-4 bg-black dark:bg-accent-gold text-white dark:text-black px-10 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:gap-6 transition-all shadow-xl"
@@ -257,7 +257,7 @@ const Practices: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="https://calendly.com/apexsportslaw/30min"
+              href="https://calendly.com/apexsportslaw-info/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-accent-gold text-black px-8 py-3.5 rounded-lg font-black uppercase tracking-widest text-xs hover:bg-yellow-600 transition-all shadow-xl shadow-accent-gold/20"
