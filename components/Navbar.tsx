@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const CALENDLY_URL = 'https://calendly.com/apexsportslaw/30min';
+const CALENDLY_URL = 'https://calendly.com/apexsportslaw-info/30min';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
