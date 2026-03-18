@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 
   const galleryImages = [
     {
-      url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop",
+      url: "https://unsplash.com/photos/white-and-blue-soccer-ball-on-green-grass-field-OgqWLzWRSaI?q=80&w=2070&auto=format&fit=crop",
       title: "The Law Library",
       category: "Research",
     },
