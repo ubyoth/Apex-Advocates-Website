@@ -346,9 +346,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-      </div>
-    </>
-  );
-};
-
-export default Home;
