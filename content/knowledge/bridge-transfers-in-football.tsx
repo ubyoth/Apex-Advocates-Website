@@ -7,7 +7,7 @@ const SLUG = "bridge-transfers-in-football";
 const PAGE_URL = `${SITE_URL}/knowledge/${SLUG}`;
 
 // Use a specific image when you have it; fallback is fine for now
-const OG_IMAGE = `${SITE_URL}/og/${SLUG}.jpg`;
+const OG_IMAGE = "https://res.cloudinary.com/dq7vjblwd/image/upload/v1773785854/Gemini_Generated_Image_oiwmmqoiwmmqoiwm_eyyahq.png&auto=format&fit=crop";
 const OG_IMAGE_FALLBACK = `${SITE_URL}/og/default.jpg`;
 
 const TITLE =
