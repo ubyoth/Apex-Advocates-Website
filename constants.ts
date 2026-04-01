@@ -141,8 +141,27 @@ However, what do the regulations say on trials?
     `,
   },
 
-  {
+   {
     id: "bp2",
+    title: "FIFA Parents’ Education on Football Agents: Key Takeaways for Parents of Young Footballers",
+    excerpt:
+      "A practical guide to FIFA’s rules on football agents: minors, contracts, fees, trials, and how parents can protect young players from exploitation.",
+    author: "Yahaya Othman",
+    date: "2026-04-01",
+    readTime: "3 min read",
+    category: "Sports Law",
+    imageUrl:
+      "https://res.cloudinary.com/dq7vjblwd/image/upload/v1775040418/FIFA_parents_education_kpumiw.jpg",
+    featured: true,
+    slug: "fifa-parents-education-on-football",
+    content: `
+FIFA recently published the Parents’ Education on Football Agents (PEFA), a handbook aimed at promoting a fair, transparent, and ethical agent ecosystem centred on the well-being of minors. 
+The document also demystifies the role of football agents and equips parents with the knowledge needed to safeguard their children’s interests.
+    `,
+  },
+
+  {
+    id: "bp3",
     title:  "The New IFAB Football Regulations: What Players, Clubs and Officials Should Know",
   excerpt:
     "A practical overview of the latest IFAB football regulation changes on throw-ins, goal kicks, substitutions, injuries and VAR protocol developments.",
@@ -159,7 +178,7 @@ However, what do the regulations say on trials?
       
 
   {
-    id: "bp3",
+    id: "bp4",
     title: "Bridge Transfers in Football: FIFA Rules Every Player and Agent Must Know",
     excerpt:
       "This article examines the regulatory framework, legal implications, and compliance risks in bridge transfers. Legal practitioners must carefully evaluate intermediary structures to avoid sanctions.",
@@ -179,7 +198,7 @@ Legal practitioners must carefully evaluate intermediary structures to avoid san
   },
 
   {
-  id: "bp4",
+  id: "bp5",
   title: "The FIFA Club Licensing Regulations: Responsibilities of Member Associations and Nigerian Clubs",
     excerpt:
       "This article explores the responsibilities of member associations under the FIFA CLR, with a particular focus on their impact on football clubs in Nigeria.",
