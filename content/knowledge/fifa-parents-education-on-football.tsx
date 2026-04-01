@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const SITE_URL = "https://apexsportslaw.com";
-const SLUG = "fifa-parents-education-on-football.tsx";
+const SLUG = "fifa-parents-education-on-football";
 const PAGE_URL = `${SITE_URL}/knowledge/${SLUG}`;
 
 const OG_IMAGE = "https://res.cloudinary.com/dq7vjblwd/image/upload/v1775040418/FIFA_parents_education_kpumiw.jpg";
@@ -32,9 +32,9 @@ const FIFAParentsEducation: React.FC = () => {
 
   const related = [
     {
-      title: "FIFA Parents’ Education on Football Agents: Key Takeaways for Parents of Young Footballers",
-      slug: "fifa-parents-education-on-football",
-      note: "Football agents, minors, contracts, fees, trials, and how parents can protect young players from exploitation.",
+      title: "FIFA’s Trial Rules vs. Africa’s Fake Agent Nightmare",
+      slug: "fake-agent-nightmare",
+      note: "Trials, FIFA RSTP Article 19ter, and how players avoid scams.",
     },
   ];
 
