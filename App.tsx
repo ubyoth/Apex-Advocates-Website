@@ -16,6 +16,7 @@ import BridgeTransfers from "./content/knowledge/bridge-transfers-in-football";
 import FIFALicensing from "./content/knowledge/fifa-club-licensing-regulations";
 import FakeAgents from "./content/knowledge/fake-agent-nightmare";
 import NewIFABFootballRegulations from "./content/knowledge/new-ifab-football-regulations";
+import FIFAParentsEducation from "./content/knowledge/fifa-parents-education-on-football";
 import ThankYou from "./pages/ThankYou";
 import WhatsAppButton from "./components/WhatsAppButton";
 const ScrollToTop = () => {
@@ -60,6 +61,7 @@ const App: React.FC = () => {
   <Route path="/knowledge/fifa-club-licensing-regulations" element={<FIFALicensing />} />
   <Route path="/knowledge/fake-agent-nightmare" element={<FakeAgents />} />
   <Route path="/knowledge/new-ifab-football-regulations" element={<NewIFABFootballRegulations />} />
+  <Route path="/knowledge/fifa-parents-education-on-football" element={<FIFAParentsEducation />} />
 
   {/* Dynamic post route LAST among /knowledge routes */}
   <Route path="/knowledge/:slug" element={<PostDetail />} />
