@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Apex Sports Law — Official Website
 
-# Run and deploy your AI Studio app
+Apex Sports Law is a specialist sports law practice advising footballers, agents, and clubs on contracts, transfers, FIFA regulations, and dispute resolution.
 
-This contains everything you need to run your app locally.
+This repository contains the production codebase for the Apex Sports Law website, including its SEO-optimized Knowledge Centre.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1iHRyNRm6AbnqEYAqI6LAiPv6sVwJBrAO
+---
 
-## Run Locally
+## Overview
 
-**Prerequisites:**  Node.js
+The platform is designed to:
+- Provide **authoritative legal insights** on football regulations
+- Serve as a **client acquisition channel** for advisory services
+- Establish **thought leadership** in sports law across Africa
+- Deliver **high-performance, SEO-first content** targeting football stakeholders
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Key Capabilities
+
+### 1. Knowledge Centre (Content Engine)
+- Long-form, SEO-optimized legal articles
+- Structured for discoverability (Google, LinkedIn previews)
+- Focus areas:
+  - FIFA Regulations (RSTP, agents, transfers)
+  - Football governance and compliance
+  - Player protection and dispute resolution
+
+### 2. SEO Infrastructure
+- Server-compatible metadata via `react-helmet-async`
+- Open Graph (OG) and Twitter Card optimization
+- Canonical URL enforcement
+- Structured data (Schema.org: WebSite, LegalService)
+- Internal linking strategy for topical authority
+
+### 3. Conversion Layer
+- Embedded consultation funnel (Calendly integration)
+- Service positioning across:
+  - Sports Law
+  - Arbitration & Dispute Resolution
+  - Corporate Advisory
+
+---
+
+## Tech Stack
+
+- **Frontend:** React (TypeScript) + Vite  
+- **Routing:** React Router DOM  
+- **SEO:** react-helmet-async  
+- **Hosting:** Firebase Hosting  
+- **Assets:** Cloudinary (images), static OG images  
+
+---
+
+## Project Structure
+
+```bash
+/src
+  /pages
+    Home.tsx
+    PostDetail.tsx
+  /constants
+    constants.ts   # Blog content + metadata
+/public
+  /og             # Open Graph images
