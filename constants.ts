@@ -212,4 +212,26 @@ Legal practitioners must carefully evaluate intermediary structures to avoid san
     slug: "fifa-club-licensing-regulations",
     content: `The FIFA Club Licensing Regulations is a foundational document with the overall goal of standardizing and elevating football club management globally.`,
   },
+
+  {
+  id: "bp6",
+  title:
+    "Termination of a Football Contract with Just Cause: A Glance at Article 14 of the FIFA RSTP",
+  excerpt:
+    "Article 14 of the FIFA Regulations on the Status and Transfer of Players governs when a player or club may lawfully terminate a football contract with just cause, without compensation or sporting sanctions.",
+  author: "Yahaya Othman",
+  date: "2026-05-22",
+  readTime: "5 minute read",
+  category: "Sports Law",
+  imageUrl:
+    "https://res.cloudinary.com/dq7vjblwd/image/upload/v1779473746/businessman-signing-sports-contract-with-soccer-ball-desk_1235831-54791_ivilyz.png",
+  featured: true,
+  slug: "termination-with-just-cause-fifa-rstp",
+  content: `
+Article 14 of the FIFA Regulations on the Status and Transfer of Players (RSTP) governs when a player or club may terminate a football contract with just cause.
+While contractual stability remains a fundamental principle in football law, FIFA and CAS jurisprudence recognise that certain breaches may justify unilateral termination without compensation or sporting sanctions.
+This article examines the meaning of just cause, the principles developed through FIFA and CAS decisions, and the legal framework governing contractual disputes in professional football.
+  `,
+},
+
 ];
