@@ -134,7 +134,7 @@ export const BLOG_POSTS: BlogPost[] = [
   imageUrl:
     "https://res.cloudinary.com/dq7vjblwd/image/upload/v1779473746/businessman-signing-sports-contract-with-soccer-ball-desk_1235831-54791_ivilyz.png",
   featured: true,
-  slug: "Footbal-Contract-Just-Cause",
+  slug: "termination-of-football-contract-with-just-cause",
   content: `
 Article 14 of the FIFA Regulations on the Status and Transfer of Players (RSTP) governs when a player or club may terminate a football contract with just cause.
 While contractual stability remains a fundamental principle in football law, FIFA and CAS jurisprudence recognise that certain breaches may justify unilateral termination without compensation or sporting sanctions.
