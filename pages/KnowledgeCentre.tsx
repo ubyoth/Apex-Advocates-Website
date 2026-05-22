@@ -86,7 +86,13 @@ const KnowledgeCentre: React.FC = () => {
 
   const handleLoadMore = () => setVisiblePosts((prev) => prev + POSTS_PER_CLICK);
 
-  const posts = BLOG_POSTS as unknown as Post[];
+  const posts = useMemo(() => {
+  return (BLOG_POSTS as unknown as Post[]).slice().sort((a, b) => {
+    const dateA = new Date(a.date ?? 0).getTime();
+    const dateB = new Date(b.date ?? 0).getTime();
+    return dateB - dateA; // newest first
+  });
+}, []);
 
   useEffect(() => {
     const saved = localStorage.getItem("apexBookmarkedPosts");
