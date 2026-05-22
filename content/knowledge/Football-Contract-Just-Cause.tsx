@@ -7,7 +7,7 @@ const SLUG = "termination-of-football-contract-with-just-cause";
 const PAGE_URL = `${SITE_URL}/knowledge/${SLUG}`;
 
 const OG_IMAGE =
-  "https://res.cloudinary.com/dq7vjblwd/image/upload/w_1200,h_630,c_fill/v1775081179/termination_just_cause_fifa_rstp.png";
+  "https://res.cloudinary.com/dq7vjblwd/image/upload/v1779473746/businessman-signing-sports-contract-with-soccer-ball-desk_1235831-54791_ivilyz.png";
 const OG_IMAGE_FALLBACK = `${SITE_URL}/og/default.jpg`;
 
 const TITLE =
