@@ -121,8 +121,30 @@ export const SUCCESS_STORIES: SuccessStory[] = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
+    {
+  id: "bp1",
+  title:
+    "Termination of a Football Contract with Just Cause: A Glance at Article 14 of the FIFA RSTP",
+  excerpt:
+    "Article 14 of the FIFA Regulations on the Status and Transfer of Players governs when a player or club may lawfully terminate a football contract with just cause, without compensation or sporting sanctions.",
+  author: "Yahaya Othman",
+  date: "2026-05-22",
+  readTime: "5 minute read",
+  category: "Sports Law",
+  imageUrl:
+    "https://res.cloudinary.com/dq7vjblwd/image/upload/v1779473746/businessman-signing-sports-contract-with-soccer-ball-desk_1235831-54791_ivilyz.png",
+  featured: true,
+  slug: "Footbal-Contract-Just-Cause",
+  content: `
+Article 14 of the FIFA Regulations on the Status and Transfer of Players (RSTP) governs when a player or club may terminate a football contract with just cause.
+While contractual stability remains a fundamental principle in football law, FIFA and CAS jurisprudence recognise that certain breaches may justify unilateral termination without compensation or sporting sanctions.
+This article examines the meaning of just cause, the principles developed through FIFA and CAS decisions, and the legal framework governing contractual disputes in professional football.
+  `,
+},
+  
+  
   {
-    id: "bp1",
+    id: "bp2",
     title: "FIFA’s Trial Rules vs. Africa’s Fake Agent Nightmare",
     excerpt:
       "The debilitating effects of fake agents scams under the guise of football trials are on the rise. These scams are defined by the pay-to-play philosphy, selling false hopes and dreams to desperate players. However, what do the regulations say on trials?",
@@ -142,7 +164,7 @@ However, what do the regulations say on trials?
   },
 
    {
-    id: "bp2",
+    id: "bp3",
     title: "FIFA Parents’ Education on Football Agents: Key Takeaways for Parents of Young Footballers",
     excerpt:
       "A practical guide to FIFA’s rules on football agents: minors, contracts, fees, trials, and how parents can protect young players from exploitation.",
@@ -161,7 +183,7 @@ The document also demystifies the role of football agents and equips parents wit
   },
 
   {
-    id: "bp3",
+    id: "bp4",
     title:  "The New IFAB Football Regulations: What Players, Clubs and Officials Should Know",
   excerpt:
     "A practical overview of the latest IFAB football regulation changes on throw-ins, goal kicks, substitutions, injuries and VAR protocol developments.",
@@ -178,7 +200,7 @@ The document also demystifies the role of football agents and equips parents wit
       
 
   {
-    id: "bp4",
+    id: "bp5",
     title: "Bridge Transfers in Football: FIFA Rules Every Player and Agent Must Know",
     excerpt:
       "This article examines the regulatory framework, legal implications, and compliance risks in bridge transfers. Legal practitioners must carefully evaluate intermediary structures to avoid sanctions.",
@@ -198,7 +220,7 @@ Legal practitioners must carefully evaluate intermediary structures to avoid san
   },
 
   {
-  id: "bp5",
+  id: "bp6",
   title: "The FIFA Club Licensing Regulations: Responsibilities of Member Associations and Nigerian Clubs",
     excerpt:
       "This article explores the responsibilities of member associations under the FIFA CLR, with a particular focus on their impact on football clubs in Nigeria.",
@@ -213,25 +235,6 @@ Legal practitioners must carefully evaluate intermediary structures to avoid san
     content: `The FIFA Club Licensing Regulations is a foundational document with the overall goal of standardizing and elevating football club management globally.`,
   },
 
-  {
-  id: "bp6",
-  title:
-    "Termination of a Football Contract with Just Cause: A Glance at Article 14 of the FIFA RSTP",
-  excerpt:
-    "Article 14 of the FIFA Regulations on the Status and Transfer of Players governs when a player or club may lawfully terminate a football contract with just cause, without compensation or sporting sanctions.",
-  author: "Yahaya Othman",
-  date: "2026-05-22",
-  readTime: "5 minute read",
-  category: "Sports Law",
-  imageUrl:
-    "https://res.cloudinary.com/dq7vjblwd/image/upload/v1779473746/businessman-signing-sports-contract-with-soccer-ball-desk_1235831-54791_ivilyz.png",
-  featured: true,
-  slug: "termination-with-just-cause-fifa-rstp",
-  content: `
-Article 14 of the FIFA Regulations on the Status and Transfer of Players (RSTP) governs when a player or club may terminate a football contract with just cause.
-While contractual stability remains a fundamental principle in football law, FIFA and CAS jurisprudence recognise that certain breaches may justify unilateral termination without compensation or sporting sanctions.
-This article examines the meaning of just cause, the principles developed through FIFA and CAS decisions, and the legal framework governing contractual disputes in professional football.
-  `,
-},
+
 
 ];
